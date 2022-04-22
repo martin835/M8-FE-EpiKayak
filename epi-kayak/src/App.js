@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Jumbotron } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
@@ -11,6 +12,9 @@ function App() {
     <>
       <Jumbotron>
         <h1>🏞️ Epi-Kayak 🏖️</h1>
+        <Link to="/">
+          <h2>Home</h2>
+        </Link>
       </Jumbotron>
 
       <Routes>
